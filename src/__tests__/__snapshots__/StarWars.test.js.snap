@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<StarWars/> displays film info returned from API call: StarWars after data 1`] = `
+<body>
+  <div>
+    <main>
+      <ul>
+        <li>
+          <h2>
+            Star Wars: The Return of the Jedi
+          </h2>
+          <p>
+            The Galactic Empire is on the brink of defeat. Rebel forces are gathering their strength for a final assault on the Empire’s ultimate weapon, the second Death Star. Meanwhile, the fate of Han Solo rests in the hands of Princess Leia, Luke Skywalker, and the Ewoks on the forest moon of Endor.
+          </p>
+        </li>
+      </ul>
+    </main>
+  </div>
+</body>
+`;
+
+exports[`<StarWars/> displays film info returned from API call: StarWars before data 1`] = `
+<body>
+  <div>
+    <main>
+      <ul />
+    </main>
+  </div>
+</body>
+`;

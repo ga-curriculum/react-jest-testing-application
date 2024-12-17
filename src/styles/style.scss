@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+/* Global Resets and Basics */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Varela Round', sans-serif;
+  background: linear-gradient(45deg, hsl(234, 77%, 70%), hsl(145, 78%, 78%));
+  overflow: hidden;
+}
+
+/* Root Container */
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 1rem;
+  gap: 1rem;
+  text-align: center;
+}
+
+/* Headings */
+h1 {
+  font-size: calc(1.25rem + 2vw);
+  color: hsl(234, 30%, 20%);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Content */
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+main p {
+  font-size: 3rem;
+}
+
+/* Sections */
+section {
+  display: flex;
+  flex-direction: column;
+  max-width: 60vw;
+}
+
+.error {
+  color: red;
+}
+
+/* Unordered Lists */
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+ul li {
+  flex: 1 1 calc(25% - 1rem);
+  max-width: 300px;
+}
+
+/* Navigation Menu */
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+/* Nav Buttons */
+nav ul li button {
+  width: 200px;
+  padding: 0.5rem 2rem;
+  font-size: 0.875rem;
+  background-color: hsla(314, 45%, 80%, 0.7);
+  border: none;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+  text-align: center;
+}
+
+nav ul li button:hover {
+  background-color: hsla(284, 77%, 57%, 0.7);
+  transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  #root {
+    gap: 0.5rem;
+  }
+
+  h1 {
+    font-size: calc(1rem + 1.5vw);
+  }
+
+  ul li {
+    flex: 1 1 calc(50% - 1rem);
+  }
+
+  nav ul li button {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  main p {
+    font-size: calc(1rem + 3vw);
+  }
+}
